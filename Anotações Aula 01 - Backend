@@ -1,0 +1,49 @@
+Observação:
+-> Para este projeto instalei o plugin do VS Code "Material icon theme" para ser demonstrado os icones na arvore
+-> No visual studio code Alt+Shif+F=> Formata o documento
+------------------
+Aula 01- Criação do BackEnd
+
+Criação de um backend simples utilizando o json server para disponibilizar as api fake que serão utilizadas no projeto.
+
+Etapas são:
+- Criação do arquivo de configurção através no npm init -y
+- Adicionando a referência ao json-server no  arquivo "package.json" utilizando o comando npm i json-server
+- Criação do arquivo db.json com que é um repositório da api fake
+- Ajustada o arquivo "package.json" para iniciar o se json-server ao startar a aplicação
+- Iniciado a aplicação através do comando npm start, desta forma o end point já podem ser utilizados
+- consumido a api pelo postmam
+
+------------------
+
+>> npm init -y  (-y -> indicar que as perguntas apresentadas no prompt será com valor padrão, ao inves de ficar respondendo pergunta por pergunta)
+Esse comando funciona como uma ferramenta para criar o arquivo package.json de um projeto.
+Depois de executar as etapas do npm init, um arquivo package.json será gerado e colocado no diretório atual.
+
+Explica sobre o npm ->https://www.hostinger.com.br/tutoriais/o-que-e-npm
+
+
+-> O arquivo criado é um arquivo de configuração do projeto
+
+>> npm i json-server
+Instala a dependência do json server utilizada para construir a API
+O JsonServer possibilita a construção de ai fake
+
+Exoplica sobre o jsonServer https://www.fabricadecodigo.com/json-server/
+
+-> Criamos o arquivo "db.json" que será o nosso repositório 
+-> Ajustamos o arquivo de configuração "package.json" adicionando a linha abaixo:
+ "start": "json-server --watch db.json --port 3001"
+ 
+Esta linha indica para iniciar o json server e ficar monitorando o arquivo "db.json" na porta 3001, feito isso
+temos a nossa api funcionando.
+
+-> npm start
+Este comando inicia a api criada.
+Ao executar o comando no prompt será mostrado os end point disponibilizados a partir das informações do arquivo db.json
+
+Exemplo:
+http://localhost:3001/products
+
+Podemos testar a api pelo postman 
+ 
