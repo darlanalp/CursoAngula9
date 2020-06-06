@@ -1,0 +1,12 @@
+-> Instalamos o CLI através do comando
+npm i -g @angular/cli  (-g - global)
+
+-> Criando o projeto frontend com o comando ng new frontend
+Se utilizar a referência --minimal o projeto é criado tirando uns arquivos que não são necessários para o projeto da aula,
+mas pode ser que para outros projetos seja necessário
+
+Ficaria: ng new frontend --minimal
+
+Após isso é contruida a nossa aplicação.
+-> Depois disso vamos validar se esta tudo ok, vamos entrar via prompt de comando na pasta frontend e executar o npm start
+-> Compilando tudo certinho, testamos http://localhost:4200/ (porta padrão 4200)

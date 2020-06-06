@@ -1,0 +1,55 @@
+Aula 01
+-----------------------------------------------
+
+-> Explicação e contextualização do Angular e suas versões
+-> Apresentação do CLI, que é a parte de comando em linha, e a instalção do CLI pelo NPN
+-> Apresentação dos comandos utilizados no CLI para criação do projeto
+-> Uso do TypeScript, a linguagem padrão utilizado.
+Sendo o TypeScript uma linguagem baseado no Java Scrip tendo a caracteristica muito forte através da tipagem orientação a objeto, interface e outros.
+Tudo que o java script tem é suportado pelo java script com algumas funcionalidades a mais.
+Ou seja o código escrito em TypeScripe é compilado para java script
+
+Árvore de Componente
+
+Conceito aplicado em todo framework que utiliza componente.
+
+Aula 02
+-------------------------------
+
+Inicialização da APP
+**********************************************
+-> Ordem de inicialização
+
+1º main.ts
+2º AppModule  
+3º AppComponent -> Depois toda a arvore de componenete é acionada   
+
+O que é um componente Angular:
+
+É um pedaço da aplicação que representa uma componente visual da tela, tendo um HTML, CSS e TS (type script),
+no final das contas teremos pelo menos 3 arquivos no componente.
+
+Por exemplo, pensando na construção de um componente Home teremos:
+
+home.component.css
+home.component.html
+home.component.ts
+
+No final da teremos uma tag para acionar o componente em outra pagina, por exemplo:
+
+<app-home></app-home>
+
+Organização Usando Módulo
+**********************************************
+
+O Agular organiza a aplicação em Módulo, os componentes estarão dentro de módulo, podemos organizar nossa aplicação 
+em vários módulos, e esses vários módulos terão os seus respectivos componentes.
+
+O módulo possui alguns atributos
+
+Declarations => Declara todos os componentes, directivas e pipes que fazem parte do módulo.
+Exports => Define os components, directivas e pipes que serão exportados para outros módulos
+Imports => Coloca os module que serã importados ou utilizados no seu componente.
+Providers => Onde iremos declarar os services
+Bootstrap => Define o componente que será carregado naquele módulo, é utilizado em um único módulo, neste caso no módulo principal, no caso 
+vai ser no AppModule
