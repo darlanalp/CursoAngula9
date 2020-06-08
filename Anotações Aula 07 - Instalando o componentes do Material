@@ -1,0 +1,17 @@
+Instalação do componente do Material Desing
+****************************************************
+
+De forma geral, o Material Design é um conjunto de diretrizes criado pela Google para padronizar tudo o que envolve o Android. 
+Antes de junho de 2014, quando o Material Design foi anunciado na conferência Google I/O, um dos grandes problemas desse sistema era a 
+falta de unidade visual e de usabilidade nas interfaces que gerenciava.
+
+
+->Para instralar o "Material" no prompt de comando  digite
+ng add @angular/material
+
+-> Após, será apresentada algumas perguntas na instalação
+
+=> A primeira pergunta é sobre o tema que será utilizado no site, escolhemos a primeira para o nosso exemplo.
+=> Depois pergunta se vai ser aplicada em todas as páginas da aplicação., informamos  que sim
+=> Depois é perguntado se quer que aplique também as animações em todas as páginas da aplicação.
+

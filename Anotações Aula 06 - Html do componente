@@ -1,0 +1,15 @@
+HTML do Componente
+++++++++++++++++++++++++++++++++++++++++++
+
+Como optamos por não trabalhar inline, criamos uma página (arquivo) html para o componente 
+ajustamos o arquivo app-component.js para apontar para essa nova página.
+Para isso é so ajustar o atributo "templateUrl".
+
+Aprendemos que podemos acessar as informções da classe do componente utilizando o "duple bigode" uma explessão 
+utilizada para acessar no html alguma informação da página.
+
+Por exmplo se tivermos na classe um atributo 
+
+nome = 'Darlan' eu posso acessar esta informação na página html assim:
+
+<h1> Meu nome é {{nome}}</h1>

@@ -1,0 +1,32 @@
+Conhecendo os Arquivos do projeto
+***********************************************
+-> Por padrão o Angular usa o TypeScript e existe o arquivo de configuração tsconfig.json
+->tsconfig.json -> configura a questão de compilção do código typescript
+-> angular.json -> Arquivo que vai ter alguma configurações do projeto
+Neste arquivo fizemos uns ajustes no item abaixo mudando para false. 
+          "inlineTemplate": false,
+          "inlineStyle": false,
+Desta forma indica que teremos um arquivo separado para o html, css, typecript, pois fica mais organizado.	
+
+-> Foi apresentado o arquivo main.ts que fica dentro da pasta src
+
+Neste arquivo é indicado algumas importação e carrega o module principal da aplicação, por padrão 
+é o AppModule, module responsavel por inicializar a aplicação
+
+-> app.module -> é module principal que será inicializado pela aplicação,
+dentro dele temos o bootstrap que indica qual é o componente que vai ser carregado a nossa aplicação.
+
+-> Pasta = assets (arquivos staticos)
+Pasta onde podemos colocar imagens, arquivos de font.
+
+-> Pasta = enviroment => Local onde podemos colocar as variavéis de ambiente
+
+-> index.html - como o angular é um SPA (tem apenas uma única página), nesta página temos apenas a chamada
+do componente principal.
+
+<app-root></app-root>
+
+No componente o que define seu acesso é o seletor indicado dentro do componente
+
+
+	  
