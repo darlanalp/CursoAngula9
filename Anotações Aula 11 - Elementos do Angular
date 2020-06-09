@@ -1,0 +1,84 @@
+--------------------------------------------
+Elementos do Angular #01
+--------------------------------------------
+=> Componentes:
+O componente é formado por três partes, html, css, ts, lembrando que não obrigado a separação destes arquivos, mas fica mais organizado.
+
+
+>> Directivas:
+Temos dois tipos de directivas, sendo de uma de atributo e estrutural.
+
+A directiva de produto foca em alterar a aparencia e o comportamento de um elemento, componente ou outra directiva.
+Aparencia, seria, por exemplo, mexer no CSS.
+Comportamento, seria, eu colocar uma directiva dentro de um botação para fazer uma chamada no backend
+
+As directivas estruturais podem alterar o layout adidcionando e removendo elementos da DOM
+Normalmente as directivas estrutural tem um "*" na frente, exemplo
+
+<form *ngIf="product"></form>
+
+O Angular já possuem várias directivas, tais como;
+*ngIf
+*ngFor
+
+>> Property Bind
+
+Básicamente é a ligação do meu html com o meu typescript (classe e atributos).
+Podemos associar váriavel ou atributos da classe para que o bind seja dinâmico
+
+>> Binding de evento
+
+Utilizamos no html os parenteses para saber qual o evento.
+por exemplo: (clickincluir)
+
+>> One Way Data Binding
+
+DataBind de uma única direção.
+Posso linkar o meu componente diretamente a um atributo da minha classe, por exemplo:
+Tenho:
+nome: string
+
+No html fica: <input [value]="nome">
+
+Para esse tipo de bind o irá refletir no componente se houver alteração no atributo da classe, se eu alterar o componente não altera o 
+valor do atributo da classe.
+
+>> Two way Data Binding
+DataBind nas duas direção, se eu alterar o componente reflete no atributo e se eu alterar o atributo altera o componente.
+
+Posso linkar o meu componente diretamente a um atributo da minha classe, por exemplo:
+Tenho:
+nome: string
+
+No html fica: <input [(ngModel)]="nome">
+
+=>Rotas (Router):
+
+É a parte de navegação entre os componentes da aplicação, e neste caso temos que criar o mapeamento da url para saber qual o componente vai ser carregado.
+(Mapeamento da rota e componente)
+
+é mostrado dentro do <router-outlet></router-outlet>
+
+
+=>Pipes:
+
+É processamento que são realizados emcima das variavél, é a interpolação o que estiver dentro do "duplo bigode, exemplo {{produto.vencimento | date}}"
+
+Podemos utilizar o "|" para fazer uma formatação por exemplo, no exemplo acima formatamos para date (o date é um metodo que vai ser chamado para fazer o tratamento).
+depois do "|" podemos chamar os tratamentos passando os parâmetros.
+
+
+--------------------------------------------
+Elementos do Angular #02
+--------------------------------------------
+Programação Reativa, o agular utiliza o framework reactivex.
+A programação reativa, precisa acontecer alguma coisa externa para que o código seja executado.
+
+Observables:
+
+--------------------------------------------
+Elementos do Angular #03
+--------------------------------------------
+Services:
+
+

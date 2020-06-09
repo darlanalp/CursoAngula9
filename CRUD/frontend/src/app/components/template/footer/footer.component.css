@@ -1,0 +1,16 @@
+.footer{
+    /*Fixa o componente*/
+    position: fixed;
+    /*Coloca ele no final*/
+    bottom: 0;
+    display: flex;
+    /*Coloca o conteudo do componente alinhado no final*/
+    justify-content: flex-end;
+}
+
+.footer > span {
+    /*tamanho da font */
+    font-size: 1.1rem;
+    /*Peso da font*/
+    font-weight: 300;
+}

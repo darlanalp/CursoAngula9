@@ -1,1 +1,30 @@
-s
+Componente Cabeçalho = Criando componente
+====================================================
+=> ng g c => Utilizamos o comando ng g c NomeComponente para criar o componente 
+=> Executamos ng g c components/template/header => Este comando vai criar a pasta components, pasta template e pasta header e dentro
+desta pasta será criado  toda a estrutura do componente e seus arquivos, e registra o componente dentro do appmodule.
+
+Vai criar o arquivo TS, HTML e CSS e atualizar o arquivo appmodule.ts fazendo os imports e adicionando as directivas
+
+=> Fizemos um teste realizando a chamada do componente header no app.component.html (componente principal)
+adicionando o comando <app-header></app-header>
+
+=> No app.module fizemos a importação dos pacotes na toolbar do material
+
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+Após a adicionar o import é necessário também adicionar na directiva imports
+
+Exemplo:
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
+  ],
+  
+=> Começamos a estruturar nossa home adicionando o componente de toolbar do material
+já adicionando o logo, titulo e aplicando alguma formatações no CSS.
+
+Achei interessante a utilização da classe material-icons
+para a apresentação de ícone 

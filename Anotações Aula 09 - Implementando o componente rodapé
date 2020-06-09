@@ -1,0 +1,14 @@
+Componente Rodapé - Footer
+-----------------------------------------
+-> Criamos o componente footer utilizando o comando
+ng g c components/template/footer
+
+-> Codificamos o Html do componente
+-> styles.css -> Este um arquivo css global da aplicação
+
+Quando queremos cria classes que poderão ser utilizadas em toda a aplicação podemos colocar dentro deste arquivo
+
+-> Aplicamos alguns styles através do CSS para formatação do footer
+-> No componente principal da nossa aplicação fizemos a chamada do footer
+
+<app-footer></app-footer>

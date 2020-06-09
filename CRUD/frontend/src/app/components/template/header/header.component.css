@@ -1,0 +1,29 @@
+.header{
+    /**/
+    display: flex;
+    /*Alinha no centro*/
+    align-items: center;
+}
+
+.header a{
+    display: flex;
+    align-items: center;
+    /*Tira declaração do link*/
+    text-decoration: none;
+}
+
+.header .logo{
+   /*Define a altura máxima da imagem log*/
+   max-height: 32px;
+}
+
+.header .title-group{
+    /*Define um espaçamento para o item que tiver a classe title-group*/
+    padding-left: 25px;
+}
+
+/*Formatação do componente <i>*/
+.header .title-group i{
+    /*Define um espaçamento para o item que tiver a classe title-group*/
+    padding-left: 5px;
+}

@@ -1,0 +1,15 @@
+Componente de Navegação
+--------------------------------------
+=> Criamos o componente navbar com o comando 
+ng g c components/template/nav
+
+=> Realizamos a importação de mais dois módulos que vamos utilizar do material
+
+import { MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+
+=> Na página do html colocamos os componentes do material para mostrar os navside
+aplicamos algumas formatações do CSS
+
+=> Colocamos no componente principal, no appcomponent a chamada do componente footer
+<app-nav></app-nav>
