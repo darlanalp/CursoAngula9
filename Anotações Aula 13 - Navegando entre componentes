@@ -1,0 +1,31 @@
+=> Criamos o componente "product-crud" com o comando ng g c views/product-crud
+
+Está será a página de crud do cadastro de produto
+
+=> Trabalhamos com a navegação da página utilizando rotas
+No Html da página home onde a página será mostrada, colocamos a chamada do componente do angula <router-outlet></router-outlet>
+que indica o ponto que será substituido pela telas de navegação.
+
+=> Ajutamos o arquivo app-routing.module.ts (arquivo de gerenciamento de rota) para adicionar as novas 
+rotas de navegação
+
+Realizamos a importação dos componentes que serão utilizados nas rotas, por exemplo:
+
+import { HomeComponent } from './views/home/home.component';
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+
+=> Configuramos no routes as rotas que criamos até o momento
+
+const routes: Routes = [
+  {
+   path:"", /*Vazio indica que é a rota raiz*/
+   component: HomeComponent /*Indica qual é o componente da rota raiz*/
+  },
+  {
+    path:"products", 
+    component: ProductCrudComponent /*Indica qual é o componente da rota*/
+   }
+
+];
+=> Configruamos os links do nosso arquivo html de navegação para utilizar a directiva "routerLink" que indica para qual rota a navegação 
+vai ocorrer

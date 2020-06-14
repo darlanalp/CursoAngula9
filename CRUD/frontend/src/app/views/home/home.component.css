@@ -1,0 +1,19 @@
+.home .title{
+ /*rem => é um tipo de unidade relativa  em relação ao raiz da página,
+ ou seja dependendo da configuração padrão definida no browser a 
+ font será apresentada em proporção (pesquisar mais...)
+ 
+ Se o usuário mudar a parametrização do browse a font vai respeitar, se usar px fica estático
+ */
+ font-size: 3rem;
+ font-weight: 300;
+ line-height: 1.2; /*Altura da linha*/
+}
+
+.home .Subtitle{
+    /* "em" é uma unidade definindo que define que o valor será relativo ao componente eme que ele está
+    , ou seja, neste caso será em relação ao title*/
+    font-size: 1.1em ;
+
+}
+

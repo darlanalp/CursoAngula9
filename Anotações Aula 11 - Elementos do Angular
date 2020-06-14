@@ -76,9 +76,54 @@ A programação reativa, precisa acontecer alguma coisa externa para que o código 
 
 Observables:
 
+Conceito:
+-------------------------
+O padrão observer é um dos padrões mais utilizados na Web.
+- É um padrão orientado a Evengo
+Subject - Tem a capacidade de monitorar quando o evento acontece, e ai entra o "Observer" que são os códigos que estão enteressados 
+em um dos eventos.
+
+Os "Observer" precisa registrar no Subject para identificar que ele esta interessado em receber notificações de determinado eventp.
+Quando o subject dectecta ele notifica o observer que esta registrado.
+
+Entendendo Observables:
+
+Os "Observables" que o angular utiliza esta dentro do framework rxjs, tendo algumas vantagens, por exemplo:
+- Reutilizar
+- Stream de dados 
+- Operadores (funções que são possiveis de utilizar)
+
+O padrão observe é a base da programação reativa.
+
+Quando trabalhamos com callback trabalhamos com código assincrono
+
+
 --------------------------------------------
 Elementos do Angular #03
 --------------------------------------------
 Services:
 
+São classes que tem como principal objetivo organizar e compartilhar métodos e dados entre componentes.
+Ou seja, podem encapsular regras que muitas das vezes não estão relacionadas parte visual, e ai criamos os service
+para separar respondabilidade.
+
+Podemos compartilhar as inforções de um serviço a vários componentes, ou seja, centralizamos as regras em service.
+
+O service deve conter lógica que tenha coerencia de estar junto, encapsular a mesma regra de negocio.
+
+Para criar um service podemos utilizar o seguinte comando
+ng g s service/product
+
+Para utilizar o service dentro do componente utilizamos a injeção de depedência, será utilizado o decoration "@Injectable"
+
+
+
+Injeção de depedência:
+É um padrão no qual a classe recebe as dependências de uma fonte externa ao invés de criar por conta própria
+
+Quando na classe service colocamos o decorator "@Injectable" estamos dizendo para o angular que essa classe pode ser injetavél e ai
+o angular cria uma instância desta classe para toda a aplicação, neste a instância deste service vai poder ser utilizada
+em vários componentes.
+
+Service são singletons dentro do escopo de um injetor, podemos ter um injetor de modulo e de elemento.
 

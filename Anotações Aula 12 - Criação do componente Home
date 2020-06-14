@@ -1,0 +1,11 @@
+=> Criamos o componente home através do comando ng g c view/home
+
+Neste caso será criada uma pasta chamada view e dentro dela o componente home.
+
+Por uma questão conceitual e de organização do fonte temos a pasta "View", dentro desta pasta vamos colocar todas
+as páginas completas, que também são componentes, mas não seão reutilizadas ou compartilhadas.
+
+Dentro da pasta "Component" vamos colocar trecho que poderão ser reutizados em outros componentes
+
+=> Fizemos a no appmodule a importação do material-car
+=> Modificamos o htm da página home criando os card do material e aplicamos algumas configurações de CSSS

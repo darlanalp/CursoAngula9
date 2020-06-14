@@ -11,3 +11,10 @@
     /*Coloca um espaçamento a esquerda*/
     padding-right: 10px;
 }
+
+.content{
+    /*Cria um espaçamento do componente com outro (lado esquerdo)*/
+    padding:16px;
+    /*Define a cor de fundo do componente*/
+    background-color: #FFF ;
+}
