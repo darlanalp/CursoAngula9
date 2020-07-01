@@ -1,0 +1,28 @@
+Criação de uma classe de modelo
+-------------------------------------------------
+
+A nossas interações com o back end vamos utilizar classe padrão criados no arquivo type script e essas serão utilizadas para interagir.
+
+=> Dentro da pasta "Product" criamos o arquivo "product.model.ts"
+Definimos uma interface modelo
+
+export interface Product{
+    id?: number
+    name: string
+    price: number
+}
+
+Criação do "Produto Service"
+-------------------------------------------------
+
+Quando criamos um componente ele seja o mais objetivo e foque somente na exibição das informações (foco na visualização), já a parte de lógica
+e chamadas ao backend seja realizadas dentro de um service.
+
+A ideia de ter um "Service" no angular é centralizar lógicas e acionamento a backend que não estão diretamente ligadas a um componente.
+
+Criamos um service com o seguinte comando "g g s components/product/product"
+
+Após foi criado o na pasta "Product" o arquivo product.service
+
+Para testar importamos o pacote "snackBar" do "material" que exibe uma mensagem bonitinha, criamos uma function para exbir uma mensage quando clicamos no botão 
+e criamos um binding de uma fuction para acionar um metodo no service

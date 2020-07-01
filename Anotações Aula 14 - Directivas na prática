@@ -1,0 +1,28 @@
+Directivas na prática parte 01
+*************************************************************
+Esta aula explica como criar directivas na prática, lembrando
+que temos dois tipos de directivas, directivas de atributos, que trabalham com estivos, e directivas estruturais 
+que trabalham na DOM, as directiva estruturais iniciam com "*" na frente
+
+Como exemplos vamos criar uma directiva "Red" que é um atributo que vai saber colorir de vermelho
+
+=> Criamos a directiva "red" dentro de uma pasta "directivas" (fica mais organizado) e utilizamos o comando
+ng g d directivas/red
+
+Com isso foi criado dentro da pasta "Directivas" o arquivo "red.directive.ts" o agular cli atualizou também o arquivo app.module com os imports e
+declarations
+
+=> Na directiva ajustamos o construtor para ter uma injeção de dependencia para que possamos conseguir modificar um elemento da DOM
+exemplo:
+ constructor(private el: ElementRef) {
+    el.nativeElement.style.color = '#e35e6b'
+   }
+
+=> No html da página footer para teste adicionamos a directiva que criamos
+ <i appRed class="material-icons v-middle">
+           favorite
+ </i>
+ 
+*************************************************************
+Directivas na prática parte 02
+*************************************************************

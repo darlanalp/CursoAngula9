@@ -1,0 +1,48 @@
+Criação do componente que cria produto
+==============================================================
+=> Criamos o componente atavés do comando ng g c components/product-create
+=> Adicionamos o novo componente criado nassas rotas
+
+Bindings
+==============================================================
+Foi apresentado um conceito sobre "Bindings"
+
+Explicado como podemos realizar o binding uma fuction do aquivo typescript a um componente no HTML.
+
+=> Binding de Function
+---------------------------------------------
+
+Exemplo:
+Declaramos uma function no arquivo TypeScript
+
+fazerAlgo() : void{
+
+   console.log('Fazendo algo')
+}
+
+>> No arquivo html criamos um elemento button e fazemos o binging com function criada, por exemplo:
+
+<button (click)="fazerAlgo()" >Fazer Algo!<//button>
+
+A ligação de evento chama: event binding.
+Importante:
+
+Para o angular reconhecer o binding é necessário que o nome do evento esteja entre "(", exemplo, (click)
+
+Ao clicar no botão a function vai ser acionada.
+
+
+=> Binding de atributo
+---------------------------------------------
+
+Podemos realizar o binding do componente html a uma propriedade definida no arquivo type script, por exemplo:
+
+No arquivo type script declaramos a propriedadae.
+
+propLegal = "qualquer"
+
+No arquivo Html vamos realizar o binding de atributo
+
+<p [id]="propLegal"> </p>
+
+Neste exemplo estamos nomeando a tag "<p>" com o id preenchendo com o conteudo definido na propriedade da classe typescript

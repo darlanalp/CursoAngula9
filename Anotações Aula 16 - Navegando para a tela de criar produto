@@ -1,0 +1,29 @@
+Navegar para tela de criar produtos
+=================================================================
+
+=> No app.module importamos a module do material que trabalha com button, o MatButtonModule.
+
+import { MatButtonModule } from '@angular/material/button';
+
+=> No arquivo html do product-crud adicionamos um elemento do tipo buton 
+
+definimos a classe do material "mat-raised-button" e já realizamos o bing com a function que será acionada no arquivo do type script
+
+<button mat-raised-button (click)="navegateToProductCreate()">
+   Novo Produto
+</button>
+
+> Na classe do type script do product-crud realizamos a importação dos pacotes de roteamento do angular
+
+import { Router } from '@angular/router';
+
+No construtor da classe ajustamos para que o angular realize a injeção de dependência passando um objeto do tipo router
+
+Exemplo:
+constructor(private router : Router) { }
+
+-> Depois ajustamos a function creada e que esta com binding para o botão criar produto para rotear para a página de um novo produto
+
+exemplo:
+
+    this.router.navigate(['/products/create']);

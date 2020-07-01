@@ -1,0 +1,27 @@
+=> Vamos precisar fazer uma requisição httpclient do angular
+=> Nesta aula vamos utilizar o conceito observable
+
+No app.module vamos importar os module do http
+
+import { HttpClientModule } from '@angular/common/http'
+
+Depois ajustamos o product.service injetando o http
+=> Criamos a função para criar o produto
+create(Product:Product){}
+=> Fizemos uma chamada a um REST com metodo post utilizando o subscriber
+
+Criação do formulário de produto
+--------------------------------------------------
+
+=> Vamos no app.module realizar a importação dos module do angular para trabalhar com formulário e também vamos 
+importar os module do material para trabalhar com formulário.
+
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+=> Depois no html product-create.component.html vamos criar o formulário utilizando o "Material"
+
+ Criação do formulário de visualização de produto (leitura)
+--------------------------------------------------
+ng g c components/product/product-read

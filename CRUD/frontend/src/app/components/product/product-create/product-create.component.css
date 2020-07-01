@@ -1,0 +1,10 @@
+form{
+    display: flex;    
+    flex-direction: column ; /*Coloca um componente em baixo do outro*/
+}
+
+button{
+    /*coloca uma distancia entre o botão e o formulário (CARD)*/
+    margin-top: 20px ;
+    margin-right: 15px ;
+}
