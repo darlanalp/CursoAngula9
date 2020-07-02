@@ -25,3 +25,28 @@ import { MatInputModule } from '@angular/material/input';
  Criação do formulário de visualização de produto (leitura)
 --------------------------------------------------
 ng g c components/product/product-read
+
+Exibição dos produtos com *NGFOR
+-------------------------------------------------
+Vimos o recurso do ngFor para percorrer um array
+
+Gerando o componente tabela
+----------------------------------------
+Foi apresentado um recurso dentro do material "Material angula schematics" => https://material.angular.io/guide/schematics
+
+São facilitadores dentro do material que nos ajuda a criar componentes seguindo alguns modelos
+
+Utilizamos o ng generate @angular/material:table <component-name> para gerar uma teble do componente do material
+
+Entendendo o componente gerado
+--------------------------------------------------
+Ctr+D seleciona todas as referencia
+
+Criando a tabela produto
+--------------------------------------------------
+Foi explicado a ligação do datasource com a table, formatação do css
+utilização do "|" para a formatação de moeda
+configuração do app.modulo com a importação do LOCALE_ID para a formatação de casas decimais
+
+Adicionando novas colunas na tabela para ação de excluir ou editar
+-------------------------------------------------
