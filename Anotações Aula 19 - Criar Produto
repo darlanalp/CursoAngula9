@@ -1,0 +1,21 @@
+Novos metódos em produto service
+===========================================
+Adicionamos dois novos metodos de pesquisa por id e de atualização.
+Estes metodos fazem requisição no backend para realizar o get do produto
+ou o put (atualização)
+
+
+Componente atualizar produto
+=========================================
+Criamos o compoente de atualização através do comando 
+ng g c components/product-update
+Criamos uma rota para o componente de atualização
+Adicionamos o mapeamento abaixo já prevendo que vai receber um parametro[
+
+Exemplo
+{
+    path:"products/update/:id", 
+    component: ProductUpdateComponent /*Indica qual é o componente da rota*/
+}
+
+Associamos o mapeamento no html do icone de edição adicionando a rota no "routerLink"

@@ -12,3 +12,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     /*central / meio*/
     vertical-align: middle;
 }
+
+.msg-success{
+
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.msg-erro{
+
+    background-color:  #e35e6b;
+    color: #ffffff;
+}

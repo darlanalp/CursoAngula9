@@ -50,3 +50,6 @@ configuração do app.modulo com a importação do LOCALE_ID para a formatação de ca
 
 Adicionando novas colunas na tabela para ação de excluir ou editar
 -------------------------------------------------
+Foi adicionada duas novas colunas na tabea, essas colunas representam a ação excluir e editar,
+foi adicionado o html com icone utilizando o material
+

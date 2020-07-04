@@ -10,6 +10,7 @@
     align-items: center;
     /*Tira declaração do link*/
     text-decoration: none;
+    color: black;
 }
 
 .header .logo{

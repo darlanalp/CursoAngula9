@@ -36,6 +36,8 @@ import { registerLocaleData} from '@angular/common';
 registerLocaleData(localePt);
 
 import { from } from 'rxjs';
+import { ProductUpdateComponent } from './components/product/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/product/product-delete/product-delete.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +50,9 @@ import { from } from 'rxjs';
     ForDirective,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,
